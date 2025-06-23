@@ -1,8 +1,10 @@
 import React from "react";
+import {toast} from "react-toastify";
 
 const NewsLetter = () => {
   const onSubmitHandler = (event) => {
     event.preventDefault();
+    toast.success("Subscribed successfully!");
   };
   return (
     <div className="text-center">
